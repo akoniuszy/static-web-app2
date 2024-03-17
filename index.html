@@ -1,0 +1,509 @@
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Strona z PowerBi i PDF</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <!-- <script>
+    const baseUrl = 'https://app.powerbi.com/reportEmbed';
+    const ctid = 'baadbfa3-7cf3-4a94-ae86-bd51a010a676';
+
+    const json = {
+      "navMenu": [
+        {
+          "title": {
+            "pl": "Praca KSE",
+            "en": "KSE Work"
+          },
+          "subMenu": [
+            {
+              "title": {
+                "pl": "Analiza danych",
+                "en": "Data Analysis"
+              },
+              "reports": [
+                {
+                  "name": "Report Test",
+                  "reportId": "230e5b93-d4bc-48fe-b476-97a355769747",
+                  "type": "powerbi",
+                  "table": {
+                    "pageName": {
+                      "pl": "ReportSection653e9e36530a96123cba",
+                      "en": "ReportSectionbfdb4309d3e4b10e7648"
+                    },
+                    "width": "100%",
+                    "height": "2000px"
+                  },
+                  "chart": {
+                    "pageName": {
+                      "pl": "ReportSection6a972115d4b639c21566",
+                      "en": "ReportSectionfc43ce6fc0a2d7a17d65"
+                    },
+                    "width": "100%",
+                    "height": "800px"
+                  },
+                  "path": {
+                    "pl": "> Praca KSE > Analiza danych > Report 1",
+                    "en": "> KSE Work > Data Analysis > Report 1"
+                  }
+                },
+				
+				{
+                  "name": "Funkcjonowanie RB - Prognozowana wielkość RO",
+                  "reportId": "c9f1d803-5f8f-460e-bc58-e9047f8f3194",
+                  "type": "powerbi",
+                  "table": {
+                    "pageName": {
+                      "pl": "ReportSection653e9e36530a96123cba",
+                      "en": "ReportSectionbfdb4309d3e4b10e7648"
+                    },
+                    "width": "100%",
+                    "height": "2000px"
+                  },
+                  "chart": {
+                    "pageName": {
+                      "pl": "",
+                      "en": ""
+                    },
+                    "width": "100%",
+                    "height": "800px"
+                  },
+                  "path": {
+                    "pl": "> Praca KSE > Analiza danych > Funkcjonowanie RB - Prognozowana wielkość RO",
+                    "en": "> KSE Work > Data Analysis > Funkcjonowanie RB - Prognozowana wielkość RO"
+                  }
+                },
+				
+				{
+                  "name": "Funkcjonowanie RB - Koszty na rynku bilansującym",
+                  "reportId": "fb0c3ef5-2c12-4fd1-9eea-8be86d275a13",
+                  "type": "powerbi",
+                  "table": {
+                    "pageName": {
+                      "pl": "ReportSectiona46b549d0bd3416651a6",
+                      "en": "ReportSectiondce31d73b24d2e45fb57"
+                    },
+                    "width": "100%",
+                    "height": "2000px"
+                  },
+                  "chart": {
+                    "pageName": {
+                      "pl": "ReportSection6a972115d4b639c21566",
+                      "en": "ReportSectionfc43ce6fc0a2d7a17d65"
+                    },
+                    "width": "100%",
+                    "height": "800px"
+                  },
+                  "path": {
+                    "pl": "> Praca KSE > Analiza danych > Funkcjonowanie RB - Koszty na rynku bilansującym",
+                    "en": "> KSE Work > Data Analysis > Funkcjonowanie RB - Koszty na rynku bilansującym"
+                  }
+                },
+				
+				{
+                  "name": "Funkcjonowanie RB - ilość energii niezbilansowania",
+                  "reportId": "7bf0bf57-2857-471d-9e9f-fba66561bcea",
+                  "type": "powerbi",
+                  "table": {
+                    "pageName": {
+                      "pl": "ReportSection653e9e36530a96123cba",
+                      "en": "ReportSectionbfdb4309d3e4b10e7648"
+                    },
+                    "width": "100%",
+                    "height": "2000px"
+                  },
+                  "chart": {
+                    "pageName": {
+                      "pl": "ReportSection6a972115d4b639c21566",
+                      "en": "ReportSectiona559134040cbed4d1012"
+                    },
+                    "width": "100%",
+                    "height": "800px"
+                  },
+                  "path": {
+                    "pl": "> Praca KSE > Analiza danych > Funkcjonowanie RB - ilość energii niezbilansowania",
+                    "en": "> KSE Work > Data Analysis > Funkcjonowanie RB - ilość energii niezbilansowania"
+                  }
+                },
+				
+				{
+                  "name": "Funkcjonowanie RB - ceny energii",
+                  "reportId": "0248aac6-c560-453c-98f0-d53e47a440cf",
+                  "type": "powerbi",
+                  "table": {
+                    "pageName": {
+                      "pl": "ReportSection653e9e36530a96123cba",
+                      "en": "ReportSectionbfdb4309d3e4b10e7648"
+                    },
+                    "width": "100%",
+                    "height": "2000px"
+                  },
+                  "chart": {
+                    "pageName": {
+                      "pl": "ReportSection4a13326c3b05fe285d00",
+                      "en": "ReportSectionea01dfa69570872bf132"
+                    },
+                    "width": "100%",
+                    "height": "800px"
+                  },
+                  "path": {
+                    "pl": "> Praca KSE > Analiza danych > Funkcjonowanie RB - ceny energii",
+                    "en": "> KSE Work > Data Analysis > Funkcjonowanie RB - ceny energii"
+                  }
+                },
+				
+				{
+                  "name": "Funkcjonowanie RB - Ilość energii bilansującej aktywowanej",
+                  "reportId": "b269bb50-a895-4e7a-a010-f87a93f5d046",
+                  "type": "powerbi",
+                  "table": {
+                    "pageName": {
+                      "pl": "ReportSection653e9e36530a96123cba",
+                      "en": "ReportSectionbfdb4309d3e4b10e7648"
+                    },
+                    "width": "100%",
+                    "height": "2000px"
+                  },
+                  "chart": {
+                    "pageName": {
+                      "pl": "ReportSection6a972115d4b639c21566",
+                      "en": "ReportSectiona559134040cbed4d1012"
+                    },
+                    "width": "100%",
+                    "height": "800px"
+                  },
+                  "path": {
+                    "pl": "> Praca KSE > Analiza danych > Funkcjonowanie RB - Ilość energii bilansującej aktywowanej",
+                    "en": "> KSE Work > Data Analysis > Funkcjonowanie RB - Ilość energii bilansującej aktywowanej"
+                  }
+                },
+				
+                // Example PDF report
+                {
+                  "name": "Test PDF Report",
+                  "type": "pdf",
+                  "pdfUrl": "https://raportsdg.stat.gov.pl/Raport_SDG_2023.pdf",
+                  "path": {
+                    "pl": "> Praca KSE > Analiza danych > Test PDF Report",
+                    "en": "> KSE Work > Data Analysis > Test PDF Report"
+                  }
+                }
+                // Additional reports
+              ]
+            }
+            // Additional submenus
+          ]
+        }
+        // Additional main menus
+      ]
+    };
+
+
+    document.addEventListener('DOMContentLoaded', function() {
+        localStorage.setItem('type', "table");
+        var lang = localStorage.getItem('lang');
+        lang ? changelang(lang) : changelang("pl");
+
+        function generateMenu(json, lang) {
+            const nav = document.getElementById('main-nav'); // Get the existing nav element
+            const ul = document.createElement('ul');
+            ul.className = 'nav-menu nav-center';
+            nav.innerHTML = ''; // Clear existing content
+
+            json.navMenu.forEach(mainItem => {
+                const li = document.createElement('li');
+                const a = document.createElement('a');
+                a.href = '#';
+                a.textContent = mainItem.title[lang]; // Use the lang parameter
+                a.className = 'nav-active';
+                li.appendChild(a);
+
+                if (mainItem.subMenu) {
+                    const subUl = document.createElement('ul');
+                    mainItem.subMenu.forEach(subItem => {
+                        const subLi = document.createElement('li');
+                        const subA = document.createElement('a');
+                        subA.href = '#';
+                        subA.textContent = subItem.title[lang]; // Use the lang parameter
+                        subLi.appendChild(subA);
+
+                        if (subItem.reports) {
+                            const reportsUl = document.createElement('ul');
+                            subItem.reports.forEach(report => {
+                                const reportLi = document.createElement('li');
+                                const reportA = document.createElement('a');
+                                reportA.href = '#';
+                                reportA.textContent = report.name;
+                                if(report.type === "powerbi") {
+                                    reportA.setAttribute('reportId', report.reportId);
+                                    reportA.setAttribute('table-pagename-pl', report.table.pageName["pl"]);
+                                    reportA.setAttribute('table-pagename-en', report.table.pageName["en"]);
+                                    reportA.setAttribute('chart-pagename-pl', report.chart.pageName["pl"]);
+                                    reportA.setAttribute('chart-pagename-en', report.chart.pageName["en"]);
+                                    reportA.setAttribute('table-width', report.table.width);
+                                    reportA.setAttribute('table-height', report.table.height);
+                                    reportA.setAttribute('chart-width', report.chart.width);
+                                    reportA.setAttribute('chart-height', report.chart.height);
+                                }
+                                reportA.setAttribute('report-path-pl', report.path["pl"]);
+                                reportA.setAttribute('report-path-en', report.path["en"]);
+                                reportA.setAttribute('data-report-type', report.type); // New attribute to distinguish report types
+                                if(report.type === "pdf") {
+                                    reportA.setAttribute('data-pdf-url', report.pdfUrl); // Set PDF URL if applicable
+                                }
+                                reportLi.appendChild(reportA);
+                                reportsUl.appendChild(reportLi);
+                            });
+                            subLi.appendChild(reportsUl);
+                        }
+
+                        subUl.appendChild(subLi);
+                    });
+                    li.appendChild(subUl);
+                }
+
+                ul.appendChild(li);
+            });
+
+            nav.appendChild(ul);
+
+            // Navigation from menu
+            const navLinks = document.querySelectorAll('#main-nav a');
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(event) {
+                    event.preventDefault(); 
+                    
+                    const reportType = this.getAttribute('data-report-type');
+                    if(reportType === "powerbi") {
+                        const reportId = this.getAttribute('reportId');
+                        setReport(reportId);
+                    } else if(reportType === "pdf") {
+                        const pdfUrl = this.getAttribute('data-pdf-url');
+                        setPDFReport(pdfUrl);
+                    }
+                });
+            });
+        }
+
+        function getReportDetails(json, reportId) {
+            let details = {
+                'table-pagename': '',
+                'chart-pagename': '',
+                'table-width': '',
+                'table-height': '',
+                'chart-width': '',
+                'chart-height': '',
+                'report-path': '',
+                'type': '', // Add this
+                'pdfUrl': '' // Add this for PDF reports
+            };
+
+            json.navMenu.forEach(menuItem => {
+                menuItem.subMenu.forEach(subItem => {
+                    subItem.reports.forEach(report => {
+                        if(report.reportId === reportId) {
+                            details['table-pagename'] = report.table.pageName[lang];
+                            details['chart-pagename'] = report.chart.pageName[lang];
+                            details['table-width'] = report.table.width;
+                            details['table-height'] = report.table.height;
+                            details['chart-width'] = report.chart.width;
+                            details['chart-height'] = report.chart.height;
+                            details['report-path'] = report.path[lang];
+                            details.type = report.type; // Set the type
+                            if(report.type === 'pdf') {
+                                details.pdfUrl = report.pdfUrl; // Set the PDF URL for PDF reports
+                            }
+                        }
+                    });
+                });
+            });
+
+            return details;
+        }
+
+        function setReport(reportId) {
+            localStorage.setItem('reportId', reportId);
+                    
+            const reportDetails = getReportDetails(json, reportId);
+			
+			// Make chart image invisible if chart-pagename is empty
+			const chartIcon = document.getElementById('type-selector');
+			if(reportDetails["chart-pagename"] === "") {
+				chartIcon.style.display = 'none';
+				localStorage.setItem('type', 'table');
+			} else {
+				chartIcon.style.display = 'block'; // Make sure to display it if it's not empty
+			}
+			
+            if(reportDetails.type === "powerbi") {
+                const selectedDate = datePicker.value;
+                const dateObject = new Date(selectedDate);
+
+                // Ensure the month and day are in two-digit format.
+                const formattedDate = dateObject.getFullYear() + '-' + 
+                                      ('0' + (dateObject.getMonth() + 1)).slice(-2) + '-' + 
+                                      ('0' + dateObject.getDate()).slice(-2);
+                
+                let pageName = reportDetails["table-pagename"];
+                let width = reportDetails["table-width"];
+                let height = reportDetails["table-height"];
+                    
+                if(localStorage.getItem('type') === "chart") {
+                    pageName = reportDetails["chart-pagename"];
+                    width = reportDetails["chart-width"];
+                    height = reportDetails["chart-height"];
+                }
+                
+                const reportUrl = `${baseUrl}?reportId=${reportId}&autoAuth=true&pageName=${pageName}&ctid=${ctid}&filterPaneEnabled=false&navContentPaneEnabled=false&filter=wykresy_PL_ENG%2Fdoba_date+eq+%27${formattedDate}%27`;
+
+                // Set iframe source and style
+                const reportIframe = document.querySelector('#reportContainer iframe');
+                reportIframe.src = reportUrl; 
+                reportIframe.style.width = width;
+                reportIframe.style.height = height; 
+                
+                // Update breadcrumb navigation
+                const breadcrumbPath = document.querySelector('#breadcrumb-nav #breadcrumb-path');
+                breadcrumbPath.textContent = reportDetails["report-path"];
+                
+                //alert(reportUrl);
+            } else if(reportDetails.type === "pdf") {
+                setPDFReport(reportDetails.pdfUrl);
+            }
+        }
+
+        function setPDFReport(pdfUrl) {
+            // Set iframe source to the PDF URL
+            const reportIframe = document.querySelector('#reportContainer iframe');
+            reportIframe.src = pdfUrl;
+            reportIframe.style.width = "100%"; // Set to desired PDF viewing width
+            reportIframe.style.height = "100%"; // Set to desired PDF viewing height
+        }
+
+        // Initialization and handling date change
+        const datePicker = document.querySelector('#date-picker input');
+        const today = new Date();
+        datePicker.valueAsDate = today;
+
+        datePicker.addEventListener('change', function() {
+            reloadReportWithParams();
+        });
+
+        // Handling buttons for changing date
+        document.querySelector('#prev-day').addEventListener('click', function() {
+            changeDate(-1);
+            reloadReportWithParams();
+        });
+        document.querySelector('#next-day').addEventListener('click', function() {
+            changeDate(1);
+            reloadReportWithParams();
+        });
+
+        // Function to change date
+        function changeDate(days) {
+            const currentDate = new Date(datePicker.value);
+            currentDate.setDate(currentDate.getDate() + days);
+            datePicker.valueAsDate = currentDate;
+        }
+        
+        // Handling language change and updating icons and texts
+        const langButtons = document.querySelectorAll('#language-selector img');
+        langButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                changelang(this.alt);
+                reloadReportWithParams();
+            });
+        });
+        
+        function changelang(language) {
+            lang = language;
+            localStorage.setItem('lang', lang);
+            generateMenu(json, lang);
+            const plIcon = document.getElementById('plIcon');
+            const enIcon = document.getElementById('enIcon');
+            if (lang === "pl") {
+                plIcon.src = "img/raporty_ikony_pl_1.svg"; 
+                enIcon.src = "img/raporty_ikony_en.svg"; 
+            } else {
+                plIcon.src = "img/raporty_ikony_pl.svg"; 
+                enIcon.src = "img/raporty_ikony_en_1.svg"; 
+            }
+            
+            // Change texts
+            if(lang === "pl") {
+                document.getElementById("picker-label").textContent = "DOBA HANDLOWA:";
+            } else {
+                document.getElementById("picker-label").textContent = "TRADING DAY:";
+            }
+        }
+
+        // Handling chart type change
+        const typeButtons = document.querySelectorAll('#type-selector img');
+        typeButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                changetype(this.alt);
+                reloadReportWithParams();
+            });
+        });
+        
+        function changetype(type) {
+            localStorage.setItem('type', type);
+            const tableIcon = document.getElementById('tableIcon');
+            const chartIcon = document.getElementById('chartIcon');
+            if (type === "table") {
+                tableIcon.src = "img/raporty_ikony_tabela_1.svg"; 
+                chartIcon.src = "img/raporty_ikony_wykres.svg"; 
+            } else {
+                tableIcon.src = "img/raporty_ikony_tabela.svg"; 
+                chartIcon.src = "img/raporty_ikony_wykres_1.svg"; 
+            }
+        }
+        
+        // Function to reload report with additional parameters
+        function reloadReportWithParams() {       
+            const reportId = localStorage.getItem('reportId');       
+            if(reportId) {
+                setReport(reportId);
+            }       
+        }
+    
+    });
+    </script> -->
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img alt="PSE" class="pse-logo" src="img/logo.png">
+        </div>
+
+        <nav id="main-nav"></nav>
+
+        <div id="language-selector">
+            <img src="img/raporty_ikony_pl_1.svg" alt="pl" title="Polski" id="plIcon">
+            <img src="img/raporty_ikony_en.svg" alt="en" title="English" id="enIcon">
+        </div>
+
+    </header>
+    <nav id="breadcrumb-nav">
+        <a href="index.html"><img src="img/home-button-1.svg" alt="Home"></a>
+        <span id="breadcrumb-path"></span>
+    </nav>
+    <div id="pickers"> 
+        <div id="date-picker" class="text polish">
+            <span id="picker-label">DOBA HANDLOWA:</span>
+            <button id="prev-day">&#10094;</button>
+            <input type="date">
+            <button id="next-day">&#10095;</button>
+        </div>
+        <div id="type-selector">
+            <img src="img/raporty_ikony_tabela_1.svg" alt="table" title="Table" id="tableIcon">
+            <img src="img/raporty_ikony_wykres.svg" alt="chart" title="Chart" id="chartIcon">
+        </div>
+    </div>
+    <hr>
+    <div id="reportContainer" >
+        <iframe allowfullscreen="true" src="https://testomsosogrd1.privatelink.azurewebsites.net" frameborder="0" hspace="0" vspace="0" marginheight="0" marginwidth="0" scrolling="no"></iframe>
+    </div>
+</body>
+</html>

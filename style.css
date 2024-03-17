@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.pse-logo {
+    width: 350px; /* Adjust the width as needed */
+    height: auto; /* Keeps the aspect ratio */
+}
+
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+#logo {
+  /* Ensure the logo has some margin if needed so it doesn't touch the nav */
+  margin-right: 20px; /* Adjust the value as needed */
+}
+
+#main-nav {
+  /* This ensures the nav is to the right of the logo */
+  //margin-left: auto;
+  margin-right: 0;
+  
+}
+
+/* Styl dla menu */
+#date-picker {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: flex-start; /* Wyrównanie do lewej */
+}
+
+#main-nav ul {
+	
+    list-style-type: none;
+    padding: 0px;
+}
+
+#main-nav li {
+    margin: 5px 0; /* Elementy menu jeden pod drugim */
+}
+
+#main-nav a {
+    text-decoration: none;
+    //color: #333;
+	background-color: #f0f0f0;
+	color:#000000;
+    display: block; /* Zapewnia, że linki zajmują całą dostępną szerokość */
+}
+
+#language-selector {
+   /* Pushes the language selector to the right */
+   margin-left: auto;
+}
+
+#language-selector img {
+    width: 80px; /* Ustawia szerokość ikonek */
+    height: 80px; /* Ustawia wysokość ikonek */
+    cursor: pointer; /* Dodaje wskaźnik kursora */
+}
+
+#breadcrumb-nav {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #e8e8e8;
+}
+
+#breadcrumb-nav a img {
+    width: 24px;
+	margin-right:10px;
+}
+
+#reportContainer, iframe {
+    width: 100%; /* Ensures full width */
+    height: 100vh; /* Adjust height as needed, vh units can help fill the screen */
+    border: none; /* Optional: Removes the border */
+	border:0;
+	
+  }
+#picker-label {
+	margin-right:10px;
+}
+
+#pickers {
+  display: flex;
+  align-items: center;
+}
+
+#type-selector img {
+    width: 40px; /* Ustawia szerokość ikonek */
+    height: 40px; /* Ustawia wysokość ikonek */
+    cursor: pointer; /* Dodaje wskaźnik kursora */
+}
